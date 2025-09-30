@@ -1,9 +1,9 @@
 import  { DataTypes } from 'sequelize';
-import  { sequelize2 } from '../db/database.js';
+import  { sequelizeTwo } from '../db/database.js';
 
 
 
-const DealerContactForm = sequelize2.define('DealerContactForm', {
+const DealerContactForm = sequelizeTwo.define('DealerContactForm', {
     dealerMail: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -28,4 +28,4 @@ const DealerContactForm = sequelize2.define('DealerContactForm', {
     timestamps: true,
   });
 
-module.exports = DealerContactForm;
+  export default DealerContactForm;

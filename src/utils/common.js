@@ -47,4 +47,4 @@ async function sendMail(subject, text, to, html) {
   };
 
 
-  module.exports = {sendMail,setLanguage};
+  export { sendMail, setLanguage };

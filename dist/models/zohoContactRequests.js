@@ -8,7 +8,7 @@ var _sequelize = require("sequelize");
 var _database = require("../db/database");
 // Make sure to adjust the path based on your project structure
 
-const ZohoDealerContactRequest = _database.sequelize2.define('ZohoContactForm', {
+const ZohoDealerContactRequest = _database.sequelizeTwo.define('ZohoContactForm', {
   zohoId: {
     type: _sequelize.DataTypes.STRING,
     // Change the data type based on the actual type in Zoho

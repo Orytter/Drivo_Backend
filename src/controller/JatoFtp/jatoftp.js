@@ -3,7 +3,11 @@ import unzipper from 'unzipper';
 import fs from 'fs';
 import SftpClient from 'ssh2-sftp-client';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 // Database connections using Sequelize
 const sequelizeDBV1 = new Sequelize('DRIVO_DBV3', 'drivodb', 'smaarst@a20299', {
   host: '18.184.209.15',

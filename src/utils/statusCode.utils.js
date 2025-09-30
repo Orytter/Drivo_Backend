@@ -6,4 +6,4 @@ const STATUS_CODE = {
     CREATE_SUCCESS_CODE: 201,
 }
 
-module.exports = STATUS_CODE;
+export default STATUS_CODE;

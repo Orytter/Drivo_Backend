@@ -25,6 +25,4 @@ const sendToZohoWithoutAwait = async (zohoCredential, data) => {
     throw error; // Re-throw the error to handle it in the calling function
   }
 };
-module.exports = {
-  sendToZohoWithoutAwait
-};
+export default sendToZohoWithoutAwait;

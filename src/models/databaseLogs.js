@@ -1,8 +1,8 @@
 import { DataTypes } from "sequelize";
-import { sequelize2 } from "../db/database.js"; // Adjust the path to your Sequelize instance
+import { sequelizeTwo } from "../db/database.js"; // Adjust the path to your Sequelize instance
 import DatabasesTable from "./databasesTables.js"; // Path to the related model
 
-const DatabaseLogs = sequelize2.define(
+const DatabaseLogs = sequelizeTwo.define(
   "DatabaseLogs",
   {
     id: {
@@ -27,12 +27,12 @@ const DatabaseLogs = sequelize2.define(
     createdAt: {
       type: DataTypes.DATE,
       allowNull: false, // Ensure this column is required
-      defaultValue: sequelize2.literal("CURRENT_TIMESTAMP"), // Use CURRENT_TIMESTAMP at the database level
+      defaultValue: sequelizeTwo.literal("CURRENT_TIMESTAMP"), // Use CURRENT_TIMESTAMP at the database level
     },
     updatedAt: {
       type: DataTypes.DATE,
       allowNull: true,
-      defaultValue: sequelize2.literal("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), // Automatically update on changes
+      defaultValue: sequelizeTwo.literal("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), // Automatically update on changes
     },
   },
   {

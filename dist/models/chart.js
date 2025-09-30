@@ -2,7 +2,7 @@
 
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const Charts = _database.sequelize2.define('Charts', {
+const Charts = _database.sequelizeTwo.define('Charts', {
   brand: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false

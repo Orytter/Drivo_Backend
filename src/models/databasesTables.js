@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
-import { sequelize2 } from "../db/database.js"; // Adjust the path to your Sequelize instance
+import { sequelizeTwo } from "../db/database.js"; // Adjust the path to your Sequelize instance
 
-const DatabasesTable = sequelize2.define("DatabasesTable", {
+const DatabasesTable = sequelizeTwo.define("DatabasesTable", {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,

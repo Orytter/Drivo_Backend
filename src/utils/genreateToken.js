@@ -1,6 +1,6 @@
-const crypto = require('crypto');
+import crypto from 'crypto';
 
-const generateResetToken = () => {
+const generateToken = () => {
   // Generate a random buffer for the token
   const buffer = crypto.randomBytes(32);
 
@@ -11,4 +11,4 @@ const generateResetToken = () => {
 };
 
 
-module.exports = { generateResetToken };
+export default generateToken;

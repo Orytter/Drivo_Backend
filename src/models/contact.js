@@ -1,9 +1,9 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
 const validContactTypes = ['Customer', 'Dealer'];
 
-const Contact = sequelize2.define('Contact', {
+const Contact = sequelizeTwo.define('Contact', {
   type: {
     type: DataTypes.STRING,
     allowNull: false,

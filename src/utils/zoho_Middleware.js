@@ -1,5 +1,5 @@
 // zohoMiddleware.js
-const axios = require('axios');
+import axios from 'axios';
 
 // Middleware function to send data to Zoho CRM without awaiting the response
 const sendToZohoWithoutAwait = async (zohoCredential, data) => {
@@ -24,6 +24,4 @@ const sendToZohoWithoutAwait = async (zohoCredential, data) => {
   }
 };
 
-module.exports = {
-  sendToZohoWithoutAwait,
-};
+export default sendToZohoWithoutAwait;

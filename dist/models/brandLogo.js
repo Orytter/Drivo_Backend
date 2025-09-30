@@ -2,7 +2,7 @@
 
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const brandLogo = _database.sequelize2.define('brandLogo', {
+const brandLogo = _database.sequelizeTwo.define('brandLogo', {
   brand: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false

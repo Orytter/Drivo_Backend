@@ -1,8 +1,8 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
 
-const Charts = sequelize2.define('Charts', {
+const Charts = sequelizeTwo.define('Charts', {
   brand: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -54,4 +54,4 @@ const Charts = sequelize2.define('Charts', {
   },
 });
 
-module.exports = Charts;
+export default Charts;

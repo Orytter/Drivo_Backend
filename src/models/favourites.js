@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const Favorite = sequelize2.define('Favorite', {
+const Favorite = sequelizeTwo.define('Favorite', {
   brand: {
     type: DataTypes.STRING,
     allowNull: false,

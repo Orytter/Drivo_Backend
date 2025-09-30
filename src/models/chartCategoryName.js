@@ -1,9 +1,9 @@
 
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
 // Define the model
-const Character = sequelize2.define('ChartCategoryName', {
+const Character = sequelizeTwo.define('ChartCategoryName', {
   charName: {
     type: DataTypes.STRING, 
     allowNull: false
@@ -11,4 +11,4 @@ const Character = sequelize2.define('ChartCategoryName', {
 });
 
 // Export the model
-module.exports = Character;
+export default Character;

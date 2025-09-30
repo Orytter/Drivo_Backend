@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js'; // Make sure to adjust the path based on your project structure
+import { sequelizeTwo } from '../db/database.js'; // Make sure to adjust the path based on your project structure
 
-const ZohoDealerContactRequest = sequelize2.define('ZohoContactForm', {
+const ZohoDealerContactRequest = sequelizeTwo.define('ZohoContactForm', {
   zohoId: {
     type: DataTypes.STRING, // Change the data type based on the actual type in Zoho
     allowNull: true, // Allow null if Zoho response is not available

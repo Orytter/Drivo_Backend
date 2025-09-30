@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const ZohoDealer = sequelize2.define('ZohoDealer', {
+const ZohoDealer = sequelizeTwo.define('ZohoDealer', {
   Multi_Line_1: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -42,4 +42,4 @@ const ZohoDealer = sequelize2.define('ZohoDealer', {
   }
 });
 
-module.exports = ZohoDealer;
+export default ZohoDealer;

@@ -1,5 +1,5 @@
 // // zohoMiddleware.js
-const axios = require('axios');
+import axios from 'axios';
 
 // export const sendToZohoWithoutAwaitContactRequest = (zohoCredential, data) => {
 //     const config = {

@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const LanguageSettings = sequelize2.define('LanguageSettings', {
+const LanguageSettings = sequelizeTwo.define('LanguageSettings', {
     englishEnabled: {
         type: DataTypes.BOOLEAN,
         defaultValue: false
@@ -18,4 +18,4 @@ const LanguageSettings = sequelize2.define('LanguageSettings', {
     timestamps: true
 });
 
-module.exports = LanguageSettings;
+export default LanguageSettings;

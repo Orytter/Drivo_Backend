@@ -2,7 +2,7 @@
 
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const ClientDealForm = _database.sequelize2.define('ClientDealForm', {
+const ClientDealForm = _database.sequelizeTwo.define('ClientDealForm', {
   Deal_Name: {
     type: _sequelize.DataTypes.STRING,
     allowNull: true

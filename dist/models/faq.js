@@ -3,7 +3,7 @@
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
 const validFaqTypes = ['FAQ Dealer', 'FAQ Get Started', 'FAQ Car Purchase', 'FAQ Practical Info', 'FAQ Basic', 'Contact Us'];
-const FAQ = _database.sequelize2.define('FAQ', {
+const FAQ = _database.sequelizeTwo.define('FAQ', {
   typeName: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false,

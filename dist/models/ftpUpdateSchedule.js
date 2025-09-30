@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const UpdateSchedule = _database.sequelize2.define('UpdateSchedule', {
+const UpdateSchedule = _database.sequelizeTwo.define('UpdateSchedule', {
   dayOfWeek: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false,

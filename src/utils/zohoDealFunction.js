@@ -148,4 +148,4 @@ const createDeal = async (
   }
 };
  
-module.exports = createDeal;
+export default createDeal;

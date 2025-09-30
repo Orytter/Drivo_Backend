@@ -9,7 +9,7 @@ import ChartCategoryName from '../../models/chartCategoryName.js';
 import LanguageSettings from '../../models/languageSetting.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { generateResetToken } from '../../utils/genreateToken.js';
+import generateToken from '../../utils/genreateToken.js';
 import config from "config";
 const { frontendUrl } = config.get("app");
 import { sendMail } from "../../utils/common.js";
@@ -19,7 +19,9 @@ import messages from "../../utils/message.utils.js";
 import { Op } from 'sequelize';
 // import statusCode from '../../utils/statusCode.utils';
 import {sequelize} from '../../db/database.js';
-import muilterMiddleware from "../../utils/multer.js";
+import multerMiddleware from "../../utils/multer.js";
+
+
 const { JWT_SECRET, JWT_REFRESH_EXPIRATION_SHORT, JWT_REFRESH_EXPIRATION_LONG, COOKIE_EXPIRATION_SHORT, COOKIE_EXPIRATION_LONG } = config.get("JwtCredentials");
 
 

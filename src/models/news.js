@@ -1,10 +1,10 @@
 import  { DataTypes } from 'sequelize';
-import  {sequelize2} from '../db/database.js';
+import  {sequelizeTwo} from '../db/database.js';
 
 
 const validNewsTypes = ['main News head', 'News of the week', 'News', 'Award winning', 'News from FDM']; 
 
-const News = sequelize2.define('News', {
+const News = sequelizeTwo.define('News', {
   brand: {
     type: DataTypes.STRING,
   },
@@ -60,4 +60,4 @@ const News = sequelize2.define('News', {
   },
 });
 
-module.exports = News;                    
+export default News;                    

@@ -3,7 +3,7 @@
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
 // Define the model
-const Character = _database.sequelize2.define('ChartCategoryName', {
+const Character = _database.sequelizeTwo.define('ChartCategoryName', {
   charName: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false

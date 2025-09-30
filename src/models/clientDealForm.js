@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const ClientDealForm = sequelize2.define('ClientDealForm', {
+const ClientDealForm = sequelizeTwo.define('ClientDealForm', {
   Deal_Name: {
     type: DataTypes.STRING,
     allowNull: true
@@ -85,4 +85,4 @@ const ClientDealForm = sequelize2.define('ClientDealForm', {
   }
 });
 
-module.exports = ClientDealForm;
+export default ClientDealForm;

@@ -214,4 +214,4 @@ const messages = {
     }
 };
 
-module.exports = messages;
+export default messages;

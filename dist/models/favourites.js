@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const Favorite = _database.sequelize2.define('Favorite', {
+const Favorite = _database.sequelizeTwo.define('Favorite', {
   brand: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false

@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const adminUser = sequelize2.define('adminUser', {
+const adminUser = sequelizeTwo.define('adminUser', {
     id: {
         allowNull: false,
         autoIncrement: true,
@@ -41,4 +41,4 @@ const adminUser = sequelize2.define('adminUser', {
     timestamps: true 
 });
 
-module.exports = adminUser;
+export default adminUser;

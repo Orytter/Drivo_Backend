@@ -14,15 +14,17 @@ import jatoRoutes from "./routes/jato.routes.js";
 import "./controller/JatoFtp/jatoftp.js"
 
 import  Config from "config";
-const cors = require("cors");
+import cors from "cors";
 const { port } = Config.get("env");
 import path from "path";
+import { fileURLToPath } from 'url';
 
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const app = express();
 
 app.use(json());
-
-console.log(path.join(__dirname, "..", "public"))
 
 app.use("/public", express.static(path.join(__dirname, "..", "public")))
 

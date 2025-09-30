@@ -8,7 +8,7 @@ var _sequelize = require("sequelize");
 var _database = require("../db/database");
 // Adjust the path to your Sequelize instance
 
-const DatabasesTable = _database.sequelize2.define("DatabasesTable", {
+const DatabasesTable = _database.sequelizeTwo.define("DatabasesTable", {
   id: {
     type: _sequelize.DataTypes.INTEGER,
     autoIncrement: true,

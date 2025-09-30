@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const clientZohoForm = sequelize2.define('clientZohoForm', {
+const clientZohoForm = sequelizeTwo.define('clientZohoForm', {
     Last_Name: {
     type: DataTypes.STRING,
     allowNull: true,
@@ -46,4 +46,4 @@ const clientZohoForm = sequelize2.define('clientZohoForm', {
   }
 });
 
-module.exports = clientZohoForm;
+export default clientZohoForm;

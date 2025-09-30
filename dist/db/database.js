@@ -33,7 +33,7 @@ const sequelize = new _sequelize.Sequelize(database, user, password, {
 });
 
 // Second Database connection (use different variable for the second database)
-const sequelize2 = new _sequelize.Sequelize(databaseftp, user2, password2, {
+const sequelizeTwo = new _sequelize.Sequelize(databaseftp, user2, password2, {
   dialect: dbProvider2,
   port: port2,
   host: host2,
@@ -51,12 +51,12 @@ sequelize.authenticate().then(() => {
 });
 
 // Authenticate second database
-sequelize2.authenticate().then(() => {
+sequelizeTwo.authenticate().then(() => {
   console.log("DB 2 connected");
 }).catch(error => {
   console.log("DB 2 connection error:", error.message);
 });
 module.exports = {
   sequelize,
-  sequelize2
+  sequelizeTwo
 };

@@ -2,7 +2,7 @@
 
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const clientZohoForm = _database.sequelize2.define('clientZohoForm', {
+const clientZohoForm = _database.sequelizeTwo.define('clientZohoForm', {
   Last_Name: {
     type: _sequelize.DataTypes.STRING,
     allowNull: true,

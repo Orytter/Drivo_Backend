@@ -2,7 +2,7 @@
 
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const LanguageSettings = _database.sequelize2.define('LanguageSettings', {
+const LanguageSettings = _database.sequelizeTwo.define('LanguageSettings', {
   englishEnabled: {
     type: _sequelize.DataTypes.BOOLEAN,
     defaultValue: false

@@ -127,6 +127,12 @@ cron.schedule('*/30 * * * *', async () => {
 
 
 
-
+  const zohoCRM_AUTH_APIS = {
+    zohoAccessTokenFunction,
+    zoho_refresh_token
+  };
+  
+  export default zohoCRM_AUTH_APIS;
+  
 
 

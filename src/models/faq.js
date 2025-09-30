@@ -1,11 +1,11 @@
 import  { DataTypes } from 'sequelize';
-import  { sequelize2 } from '../db/database.js';
+import  { sequelizeTwo } from '../db/database.js';
 
 
 const validFaqTypes = ['FAQ Dealer', 'FAQ Get Started', 'FAQ Car Purchase', 'FAQ Practical Info', 'FAQ Basic','Contact Us']; 
 
 
-const FAQ = sequelize2.define('FAQ', {
+const FAQ = sequelizeTwo.define('FAQ', {
   typeName: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -31,4 +31,4 @@ const FAQ = sequelize2.define('FAQ', {
   },
 });
 
-module.exports = FAQ;
+export default FAQ;

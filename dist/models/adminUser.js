@@ -2,7 +2,7 @@
 
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const adminUser = _database.sequelize2.define('adminUser', {
+const adminUser = _database.sequelizeTwo.define('adminUser', {
   id: {
     allowNull: false,
     autoIncrement: true,

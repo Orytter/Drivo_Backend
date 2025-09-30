@@ -11,7 +11,7 @@ function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e
 // Adjust the path to your Sequelize instance
 // Path to the related model
 
-const DatabaseLogs = _database.sequelize2.define("DatabaseLogs", {
+const DatabaseLogs = _database.sequelizeTwo.define("DatabaseLogs", {
   id: {
     type: _sequelize.DataTypes.INTEGER,
     autoIncrement: true,
@@ -35,12 +35,12 @@ const DatabaseLogs = _database.sequelize2.define("DatabaseLogs", {
     type: _sequelize.DataTypes.DATE,
     allowNull: false,
     // Ensure this column is required
-    defaultValue: _database.sequelize2.literal("CURRENT_TIMESTAMP") // Use CURRENT_TIMESTAMP at the database level
+    defaultValue: _database.sequelizeTwo.literal("CURRENT_TIMESTAMP") // Use CURRENT_TIMESTAMP at the database level
   },
   updatedAt: {
     type: _sequelize.DataTypes.DATE,
     allowNull: true,
-    defaultValue: _database.sequelize2.literal("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP") // Automatically update on changes
+    defaultValue: _database.sequelizeTwo.literal("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP") // Automatically update on changes
   }
 }, {
   tableName: "DatabaseLogs",

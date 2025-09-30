@@ -2,7 +2,7 @@
 
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
-const ZohoDealer = _database.sequelize2.define('ZohoDealer', {
+const ZohoDealer = _database.sequelizeTwo.define('ZohoDealer', {
   Multi_Line_1: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false

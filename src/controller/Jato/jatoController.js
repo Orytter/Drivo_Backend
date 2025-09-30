@@ -1,5 +1,5 @@
 import {sequelize} from "../../db/database.js";
-import {sequelize2} from "../../db/database.js";
+import {sequelizeTwo} from "../../db/database.js";
 import Charts from "../../models/chart.js";
 import Favorite from "../../models/favourites.js";
 import messages from "../../utils/message.utils.js";
@@ -2356,9 +2356,9 @@ export const getCarBrandsInfo = async (req, res) => {
     );
 
     // Fetch brand logos from the second database (sequelize2)
-    const brandLogos = await sequelize2.query(
+    const brandLogos = await sequelizeTwo.query(
       `SELECT brand, imageUrl FROM brandLogos`,
-      { type: sequelize2.QueryTypes.SELECT }
+      { type: sequelizeTwo.QueryTypes.SELECT }
     );
 
     // Merge the results

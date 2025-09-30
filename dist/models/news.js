@@ -3,7 +3,7 @@
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
 const validNewsTypes = ['main News head', 'News of the week', 'News', 'Award winning', 'News from FDM'];
-const News = _database.sequelize2.define('News', {
+const News = _database.sequelizeTwo.define('News', {
   brand: {
     type: _sequelize.DataTypes.STRING
   },

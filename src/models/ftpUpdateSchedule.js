@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const UpdateSchedule = sequelize2.define('UpdateSchedule', {
+const UpdateSchedule = sequelizeTwo.define('UpdateSchedule', {
   dayOfWeek: {
     type: DataTypes.STRING,
     allowNull: false,

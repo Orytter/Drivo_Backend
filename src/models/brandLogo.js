@@ -1,8 +1,8 @@
 
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database.js';
+import { sequelizeTwo } from '../db/database.js';
 
-const brandLogo = sequelize2.define('brandLogo', {
+const brandLogo = sequelizeTwo.define('brandLogo', {
   
   brand: {
     type: DataTypes.STRING,
@@ -20,4 +20,4 @@ const brandLogo = sequelize2.define('brandLogo', {
   timestamps: true
 });
 
-module.exports = brandLogo;
+export default brandLogo;

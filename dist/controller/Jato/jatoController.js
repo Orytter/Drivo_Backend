@@ -2213,8 +2213,8 @@ const getCarBrandsInfo = async (req, res) => {
     });
 
     // Fetch brand logos from the second database (sequelize2)
-    const brandLogos = await _database.sequelize2.query(`SELECT brand, imageUrl FROM brandLogos`, {
-      type: _database.sequelize2.QueryTypes.SELECT
+    const brandLogos = await _database.sequelizeTwo.query(`SELECT brand, imageUrl FROM brandLogos`, {
+      type: _database.sequelizeTwo.QueryTypes.SELECT
     });
 
     // Merge the results

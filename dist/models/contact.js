@@ -7,7 +7,7 @@ exports.default = void 0;
 var _sequelize = require("sequelize");
 var _database = require("../db/database");
 const validContactTypes = ['Customer', 'Dealer'];
-const Contact = _database.sequelize2.define('Contact', {
+const Contact = _database.sequelizeTwo.define('Contact', {
   type: {
     type: _sequelize.DataTypes.STRING,
     allowNull: false
