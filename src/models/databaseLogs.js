@@ -1,6 +1,6 @@
 import { DataTypes } from "sequelize";
-import { sequelize2 } from "../db/database"; // Adjust the path to your Sequelize instance
-import DatabasesTable from "./databasesTables"; // Path to the related model
+import { sequelize2 } from "../db/database.js"; // Adjust the path to your Sequelize instance
+import DatabasesTable from "./databasesTables.js"; // Path to the related model
 
 const DatabaseLogs = sequelize2.define(
   "DatabaseLogs",

@@ -1,6 +1,6 @@
 
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database';
+import { sequelize2 } from '../db/database.js';
 
 const brandLogo = sequelize2.define('brandLogo', {
   

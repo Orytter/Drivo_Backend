@@ -1,5 +1,5 @@
 import  { DataTypes } from 'sequelize';
-import  {sequelize2} from '../db/database';
+import  {sequelize2} from '../db/database.js';
 
 
 const validNewsTypes = ['main News head', 'News of the week', 'News', 'Award winning', 'News from FDM']; 

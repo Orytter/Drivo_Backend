@@ -27,7 +27,6 @@ console.log(path.join(__dirname, "..", "public"))
 app.use("/public", express.static(path.join(__dirname, "..", "public")))
 
 
-
 const PORT = port || 3000;
 
 app.get("/", async (req, res) => {

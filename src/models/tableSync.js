@@ -1,22 +1,22 @@
 
-import news from './news';
-import adminUser from './adminUser';
-import FAQ from './faq';
-import DealerContactForm from './contactRequest';
-import Contact from './contact';
-import Favorite from './favourites';
-import zohoCredentials from './zohoCredentials';
-import ZohoDealer from './zohoDealer';
-import ZohoDealerContactRequest from './zohoContactRequests';
-import Charts from './chart';
-import brandLogo from './brandLogo';
-import LanguageSetting from './languageSetting';
-import chartCategoryName from './chartCategoryName';
-import clientZohoForm from './clientZohoForm';
-import clientDealForm from './clientDealForm';
-import UpdateSchedule from './ftpUpdateSchedule';
-import databasesTables from './databasesTables';
-import databaseLogs from './databaseLogs';
+import news from './news.js';
+import adminUser from './adminUser.js';
+import FAQ from './faq.js';
+import DealerContactForm from './contactRequest.js';
+import Contact from './contact.js';
+import Favorite from './favourites.js';
+import zohoCredentials from './zohoCredentials.js';
+import ZohoDealer from './zohoDealer.js';
+import ZohoDealerContactRequest from './zohoContactRequests.js';
+import Charts from './chart.js';
+import brandLogo from './brandLogo.js';
+import LanguageSetting from './languageSetting.js';
+import chartCategoryName from './chartCategoryName.js';
+import clientZohoForm from './clientZohoForm.js';
+import clientDealForm from './clientDealForm.js';
+import UpdateSchedule from './ftpUpdateSchedule.js';
+import databasesTables from './databasesTables.js';
+import databaseLogs from './databaseLogs.js';
 
 
 

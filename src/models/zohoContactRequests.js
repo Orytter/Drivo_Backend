@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database'; // Make sure to adjust the path based on your project structure
+import { sequelize2 } from '../db/database.js'; // Make sure to adjust the path based on your project structure
 
 const ZohoDealerContactRequest = sequelize2.define('ZohoContactForm', {
   zohoId: {

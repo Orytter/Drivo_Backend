@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import { sequelize2 } from '../db/database';
+import { sequelize2 } from '../db/database.js';
 
 const LanguageSettings = sequelize2.define('LanguageSettings', {
     englishEnabled: {
