@@ -3,7 +3,7 @@ import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 import FormData from 'form-data';
-import ClientDealForm from '../models/clientDealForm'; // Adjust the path as needed
+import ClientDealForm from '../models/clientDealForm.js; // Adjust the path as needed
 import config from "config";
 
 const { frontendUrl } = config.get("frontendUrl");
