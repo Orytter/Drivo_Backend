@@ -1,0 +1,30 @@
+{
+  "env": {
+    "port": 3535
+  },
+  "Database": {
+    "dbProvider": "mysql",
+    "host": "35.80.198.152",
+    "user": "drivo",
+    "password": "dqwivosd2025",
+    "database": "DRIVO_TEST_1",
+    "port": 3306
+  },
+  "JwtCredentials": {
+    "JWT_REFRESH_EXPIRATION_SHORT": 604800,
+    "JWT_REFRESH_EXPIRATION_LONG": 1209600,
+    "COOKIE_EXPIRATION_SHORT": 604800000,
+    "COOKIE_EXPIRATION_LONG": 1209600000,
+    "JWT_SECRET": "IamUndefined"
+  },
+  "app": {
+    "frontendUrl": "http://54.190.192.105:3536"
+  },
+  "smtp": {
+    "smtpUser": "priyanshupandeyppp@gmail.com",
+    "smtpPassword": "kwmlkfeiawodqlfn",
+    "smtpPort": "587",
+    "smtpServer": "smtp.gmail.com",
+    "mailFrom": "priyanshupandeyppp@gmail.com"
+  }
+}

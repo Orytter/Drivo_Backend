@@ -1,0 +1,72 @@
+import express, { json } from "express";
+
+import { dateTime, itemsData } from "./middleware/itemData";
+import "./db/database";
+import "./models/tableSync";
+import birds from './routes/items.routes';
+import admin from './routes/admin.routes';
+import drivo from './routes/drivo.routes';
+import ftpScheduler from './routes/ftpScheduler';
+import zohoCRM_AUTH_APIS from "./controller/zoho_CRM/zohoAuthModules" ;
+import zohoController from "./routes/drivo.routes";
+
+import jatoRoutes from "./routes/jato.routes";
+import "./controller/JatoFtp/jatoftp"
+
+import  Config from "config";
+const cors = require("cors");
+const { port } = Config.get("env");
+import path from "path";
+
+const app = express();
+
+app.use(json());
+
+console.log(path.join(__dirname, "..", "public"))
+
+app.use("/public", express.static(path.join(__dirname, "..", "public")))
+
+
+
+const PORT = port || 3000;
+
+app.get("/", async (req, res) => {
+  res.json({ status: true, message: "Our node.js app works fine" });
+});
+
+var corsOptions = {
+  origin: 
+  [
+    "https://www.drivo.dk",
+    "https://drivo.dk",
+    "http://drivo.dk",
+    "https://admin.drivo.dk",
+    "http://admin.drivo.dk",
+    "http://18.184.209.15:3534",
+    "http://18.184.209.15:3536",
+    "http://18.184.209.15:3535",
+    "http://18.184.209.15:3537",
+    "http://localhost:4200",
+    "http://localhost:4300",
+    "http://127.0.0.1:3000",
+    "http://54.190.192.105:3536",
+    "http://54.190.192.105:3534",
+  ],
+};
+
+app.use(cors(corsOptions));
+
+app.get('/items', dateTime, itemsData);
+
+app.use('/birds', birds);
+
+app.use('/api/v1',admin);
+
+app.use('/api/v1', drivo);
+
+app.use('/api/v1',ftpScheduler);
+
+app.use('/api/v1',jatoRoutes);
+
+
+app.listen(PORT, () => console.log(`App listening at port ${PORT}`));

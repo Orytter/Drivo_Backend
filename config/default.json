@@ -1,0 +1,48 @@
+{
+  "env": {
+    "port": 3000
+  },
+  "Database": {
+    "dbProvider": "mysql",
+    "host": "18.184.209.15",
+    "user": "drivodb",
+    "password": "smaarst@a20299",
+    "database": "DRIVO_DBV2",
+    "port": 3306
+  },
+  "Database2": {
+    "dbProvider2": "mysql",
+    "host2": "18.184.209.15",
+    "user2": "drivodb",
+    "password2": "smaarst@a20299",
+    "databaseftp": "drivodb",
+    "port2": 3306
+  },
+  "JwtCredentials": {
+    "JWT_REFRESH_EXPIRATION_SHORT": 604800,
+    "JWT_REFRESH_EXPIRATION_LONG": 1209600,
+    "COOKIE_EXPIRATION_SHORT": 604800000,
+    "COOKIE_EXPIRATION_LONG": 1209600000,
+    "JWT_SECRET": "IamUndefined"
+  },
+  "app": {
+    "frontendUrl": "http://localhost:4200"
+  },
+  "frontendUrl":{
+    "frontendUrl":"http://localhost:4200"
+  },
+  "smtp": {
+    "smtpUser": "priyanshupandeyppp@gmail.com",
+    "smtpPassword": "kwmlkfeiawodqlfn",
+    "smtpPort": "587",
+    "smtpServer": "smtp.gmail.com",
+    "mailFrom": "priyanshupandeyppp@gmail.com"
+  },
+  "zoho_Credentials": {
+    "client_Id": "1000.NX2F98CFQ2URYW1959Z534NI334BSZ",
+    "client_Secret": "5640d32c75a9316036fb69b5927dcd480ddd0885ad",
+    "generated_Code": "1000.19800108fa5ffdc2081049677ec8b1b4.f23c3a33ac5f3d98950378524756ee7c",
+    "access_token": "1000.dac9befd6ffe02d5d48eec767b61d8be.e2476a628d274646c2400c921752aba0",
+    "refresh_token": "1000.bbba67670c78e2b6e5e5298481ce5c75.7a3c4f4d22f3a000bca69a185e86af9b"
+  }
+}
