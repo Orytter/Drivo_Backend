@@ -1,17 +1,17 @@
 import express, { json } from "express";
 
-import { dateTime, itemsData } from "./middleware/itemData";
-import "./db/database";
-import "./models/tableSync";
-import birds from './routes/items.routes';
-import admin from './routes/admin.routes';
-import drivo from './routes/drivo.routes';
-import ftpScheduler from './routes/ftpScheduler';
-import zohoCRM_AUTH_APIS from "./controller/zoho_CRM/zohoAuthModules" ;
-import zohoController from "./routes/drivo.routes";
+import { dateTime, itemsData } from "./middleware/itemData.js";
+import "./db/database.js";
+import "./models/tableSync.js";
+import birds from './routes/items.routes.js';
+import admin from './routes/admin.routes.js';
+import drivo from './routes/drivo.routes.js';
+import ftpScheduler from './routes/ftpScheduler.js';
+import zohoCRM_AUTH_APIS from "./controller/zoho_CRM/zohoAuthModules.js" ;
+import zohoController from "./routes/drivo.routes.js";
 
-import jatoRoutes from "./routes/jato.routes";
-import "./controller/JatoFtp/jatoftp"
+import jatoRoutes from "./routes/jato.routes.js";
+import "./controller/JatoFtp/jatoftp.js"
 
 import  Config from "config";
 const cors = require("cors");

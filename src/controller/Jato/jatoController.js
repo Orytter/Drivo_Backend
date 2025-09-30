@@ -1,9 +1,9 @@
-import {sequelize} from "../../db/database";
-import {sequelize2} from "../../db/database";
-import Charts from "../../models/chart";
-import Favorite from "../../models/favourites";
-import messages from "../../utils/message.utils";
-import { setLanguage } from "../../utils/common";
+import {sequelize} from "../../db/database.js";
+import {sequelize2} from "../../db/database.js";
+import Charts from "../../models/chart.js";
+import Favorite from "../../models/favourites.js";
+import messages from "../../utils/message.utils.js";
+import { setLanguage } from "../../utils/common.js";
 
 // const setLanguage=(query)=>
 // {

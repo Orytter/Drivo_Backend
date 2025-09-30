@@ -1,8 +1,8 @@
 import express from "express";
-import { bulkUpdateChartPositions, bulkUpdateFavoritePositions, updateChartPosition } from "../controller/admin/adminController";
-import { filterCars, getCarAllTrimLevels, getCarBodyType, getCarBrandsInfo, getCarColorandPrice, getCarColorwithPrice, getCarFuelTypes, getCarMinMaxPrice, getCarModelBasedOnBrand, getCarModelInfo, getCarOptions, getCarTypes, getOptionBuildRules, getPresentPageData, saveFavorite, saveSelectedVersionsInCharts } from "../controller/Jato/jatoController";
-import { getDealByNameFromZohoCRM, saveContactData } from "../controller/zoho_CRM/zohoController";
-import upload from "../utils/multer"
+import { bulkUpdateChartPositions, bulkUpdateFavoritePositions, updateChartPosition } from "../controller/admin/adminController.js";
+import { filterCars, getCarAllTrimLevels, getCarBodyType, getCarBrandsInfo, getCarColorandPrice, getCarColorwithPrice, getCarFuelTypes, getCarMinMaxPrice, getCarModelBasedOnBrand, getCarModelInfo, getCarOptions, getCarTypes, getOptionBuildRules, getPresentPageData, saveFavorite, saveSelectedVersionsInCharts } from "../controller/Jato/jatoController.js";
+import { getDealByNameFromZohoCRM, saveContactData } from "../controller/zoho_CRM/zohoController.js";
+import upload from "../utils/multer.js"
 
 const router = express.Router();
 

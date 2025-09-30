@@ -1,12 +1,12 @@
 // scheduleJob.js
 import cron from 'node-cron';
-import { downloadAndExtractAndUpdate } from '../JatoFtp/jatoftp'; // Update this with the correct path to your main function
+import { downloadAndExtractAndUpdate } from '../JatoFtp/jatoftp.js'; // Update this with the correct path to your main function
 // Import necessary modules
-import  UpdateSchedule  from '../../models/ftpUpdateSchedule';
-import DatabasesTable from '../../models/databasesTables';
-import statusCode from "../../utils/statusCode.utils";
-import messages from "../../utils/message.utils";
-import { setLanguage } from "../../utils/common";
+import  UpdateSchedule  from '../../models/ftpUpdateSchedule.js';
+import DatabasesTable from '../../models/databasesTables.js';
+import statusCode from "../../utils/statusCode.utils.js";
+import messages from "../../utils/message.utils.js";
+import { setLanguage } from "../../utils/common.js";
 import fs from 'fs';
 import path from 'path';
 

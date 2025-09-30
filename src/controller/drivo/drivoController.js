@@ -1,12 +1,11 @@
-import DealerContactForm from '../../models/contactRequest';
-import statusCode from "../../utils/statusCode.utils";
-import messages from "../../utils/message.utils";
-import Contact  from '../../models/contact';
-import Charts from '../../models/chart'
-import Favorite from '../../models/favourites';
-import { setLanguage } from "../../utils/common";
+import DealerContactForm from '../../models/contactRequest.js';
+import statusCode from "../../utils/statusCode.utils.js";
+import messages from "../../utils/message.utils.js";
+import Contact  from '../../models/contact.js';
+import Charts from '../../models/chart.js'
+import Favorite from '../../models/favourites.js';
+import { setLanguage } from "../../utils/common.js";
 import { Op } from 'sequelize';
-
 
 // const setLanguage=(query)=>
 // {

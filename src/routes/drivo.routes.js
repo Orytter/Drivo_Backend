@@ -1,6 +1,6 @@
 import express from "express";
-import { createDealerContactForm, getAllCharts, getAllChartsByType, getAllContactsFrontend, getAllFavorites, getChart } from "../controller/drivo/drivoController";
-import { allnotificationRecord, changeStatusToReadandGetResponse, deleteContactsFormsDrivosFromZohoCRM, deleteDealerRequestFromZohoCRM, getAllFAQ, getAllNews, getContactsFormsDrivosByIdFromZohoCRM, getContactsFormsDrivosFromZohoCRM, getCountOfContactsFormsDrivosFromZohoCRM, getCountOfDealersRequestsFromZohoCRM, getDealerRequestByIdFromZohoCRM, getDealerRequestFromZohoCRM, getFAQByType, getLatestNewsByType, getNewsByType, notificationRecord, TotalnotificationRecord, updateContactsFormsDrivosInZohoCRM, updateDealerRequestInZohoCRM, zohoDealerContactRequestSendData, zohoDealerSendData } from "../controller/zoho_CRM/zohoController";
+import { createDealerContactForm, getAllCharts, getAllChartsByType, getAllContactsFrontend, getAllFavorites, getChart } from "../controller/drivo/drivoController.js";
+import { allnotificationRecord, changeStatusToReadandGetResponse, deleteContactsFormsDrivosFromZohoCRM, deleteDealerRequestFromZohoCRM, getAllFAQ, getAllNews, getContactsFormsDrivosByIdFromZohoCRM, getContactsFormsDrivosFromZohoCRM, getCountOfContactsFormsDrivosFromZohoCRM, getCountOfDealersRequestsFromZohoCRM, getDealerRequestByIdFromZohoCRM, getDealerRequestFromZohoCRM, getFAQByType, getLatestNewsByType, getNewsByType, notificationRecord, TotalnotificationRecord, updateContactsFormsDrivosInZohoCRM, updateDealerRequestInZohoCRM, zohoDealerContactRequestSendData, zohoDealerSendData } from "../controller/zoho_CRM/zohoController.js";
 
 
 const router = express.Router();

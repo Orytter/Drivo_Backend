@@ -1,5 +1,5 @@
 import express from "express";
-import { fetchActiveDatabases, fetchInactiveDatabases, forceUpdate, getSchedule, listFolders, manualUpdate, setSchedule } from "../controller/ftpScheduler/ftpScheduler";
+import { fetchActiveDatabases, fetchInactiveDatabases, forceUpdate, getSchedule, listFolders, manualUpdate, setSchedule } from "../controller/ftpScheduler/ftpScheduler.js";
 
 const router = express.Router();
 

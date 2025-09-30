@@ -1,7 +1,7 @@
 import express from "express";
-import { addBrandLogo, adminSignIn, createChart, createChartCategoryName, createContact, createFAQ, createFavorite, createLanguageSettings, createNews, deleteChart, deleteChartCategoryName, deleteContactById, deleteFAQ, deleteFavorite, deleteLanguageSettings, deleteNews, forgotPasswordLink, getAdminUserInfo, getAllBrandLogo, getAllChartCategoryNames, getAllCharts, getAllChartsForPositions, getAllContacts, getAllFAQ, getAllFAQByType, getAllFavorites, getAllNews, getBrandLogoById, getCarBrandsInfo, getCarModelBasedOnBrand, getCarModelInfo, getChartById, getChartsByType, getContactById, getFAQByType, getFAQDetailsById, getFavoriteById, getLanguageSettings, getNewsById, getNewsByType, resetPassword, updateChart, updateChartCategoryName, updateContactById, updateFAQ, updateFavorite, updateLanguageSettings, updateNews, updateUserInfoAndImage } from "../controller/admin/adminController";
-import { authenticationToken } from "../middleware/auth";
-import upload from "../utils/multer"
+import { addBrandLogo, adminSignIn, createChart, createChartCategoryName, createContact, createFAQ, createFavorite, createLanguageSettings, createNews, deleteChart, deleteChartCategoryName, deleteContactById, deleteFAQ, deleteFavorite, deleteLanguageSettings, deleteNews, forgotPasswordLink, getAdminUserInfo, getAllBrandLogo, getAllChartCategoryNames, getAllCharts, getAllChartsForPositions, getAllContacts, getAllFAQ, getAllFAQByType, getAllFavorites, getAllNews, getBrandLogoById, getCarBrandsInfo, getCarModelBasedOnBrand, getCarModelInfo, getChartById, getChartsByType, getContactById, getFAQByType, getFAQDetailsById, getFavoriteById, getLanguageSettings, getNewsById, getNewsByType, resetPassword, updateChart, updateChartCategoryName, updateContactById, updateFAQ, updateFavorite, updateLanguageSettings, updateNews, updateUserInfoAndImage } from "../controller/admin/adminController.js";
+import { authenticationToken } from "../middleware/auth.js";
+import upload from "../utils/multer.js"
 
 const router = express.Router();
 

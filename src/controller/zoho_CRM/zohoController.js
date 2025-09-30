@@ -1,22 +1,22 @@
 import axios from 'axios';
-import ZohoCredential from '../../models/zohoCredentials'
-import statusCode from "../../utils/statusCode.utils";
-import messages from "../../utils/message.utils";
-import ZohoDealer from '../../models/zohoDealer';
-import ZohoDealerContactRequest from '../../models/zohoContactRequests';
-import { sendToZohoWithoutAwait } from '../../utils/zoho_Middleware';
-import { sendToZohoWithoutAwaitContactRequest } from '../../utils/zoho_ContactRequest';
-import ClientZohoForm from '../../models/clientZohoForm';
-import ClientDealForm from '../../models/clientDealForm';
-import FAQ from '../../models/faq'
-import News from '../../models/news'
+import ZohoCredential from '../../models/zohoCredentials.js'
+import statusCode from "../../utils/statusCode.utils.js";
+import messages from "../../utils/message.utils.js";
+import ZohoDealer from '../../models/zohoDealer.js';
+import ZohoDealerContactRequest from '../../models/zohoContactRequests.js';
+import { sendToZohoWithoutAwait } from '../../utils/zoho_Middleware.js';
+import { sendToZohoWithoutAwaitContactRequest } from '../../utils/zoho_ContactRequest.js';
+import ClientZohoForm from '../../models/clientZohoForm.js';
+import ClientDealForm from '../../models/clientDealForm.js';
+import FAQ from '../../models/faq.js';
+import News from '../../models/news.js';
 import { Op } from 'sequelize';
 import moment from 'moment';
 import fs from 'fs';
 import path from 'path';
 import FormData from 'form-data';
-import createDeal from '../../utils/zohoDealFunction';
-import { setLanguage } from "../../utils/common";
+import createDeal from '../../utils/zohoDealFunction.js';
+import { setLanguage } from "../../utils/common.js";
 
 // export const zohoDealerSendData = async (req, res) => {
 //     try {

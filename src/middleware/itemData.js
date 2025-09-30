@@ -1,4 +1,4 @@
-import items from '../services/items';
+import items from '../services/items.js';
 
 
 export const dateTime = async (req, res, next) => {

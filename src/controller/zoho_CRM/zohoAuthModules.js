@@ -1,6 +1,6 @@
 import axios from 'axios';
 import config from "config";
-import ZohoCredential from "../../models/zohoCredentials";
+import ZohoCredential from "../../models/zohoCredentials.js";
 
 import cron from "node-cron";
 
